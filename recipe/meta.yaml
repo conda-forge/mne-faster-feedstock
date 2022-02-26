@@ -1,5 +1,5 @@
 {% set name = "mne-faster" %}
-{% set version = "1.0" %}
+{% set version = "1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 19af269e6dc89fdd56bd510e99ea12d33d0c9848509a4a2c9316f2f754722ea3
+  sha256: bd3da1d195feb0bfe448d9619bad2d3c46f8912985e26012c0c2605c00afe8d7
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -36,7 +36,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'This implements the FASTER pipeline using MNE-Python'
+  summary: This implements the FASTER pipeline using MNE-Python
 
 extra:
   recipe-maintainers:
