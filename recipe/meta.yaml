@@ -1,5 +1,5 @@
 {% set name = "mne-faster" %}
-{% set version = "1.1" %}
+{% set version = "1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bd3da1d195feb0bfe448d9619bad2d3c46f8912985e26012c0c2605c00afe8d7
+  sha256: cbe483517dcd286e53a4450f01b1c364cca4a41d3ce499e3e1987c584354ba51
 
 build:
   noarch: python
